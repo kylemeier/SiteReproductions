@@ -1,0 +1,87 @@
+body{
+	font:100 1.1em/1.5 'Raleway',Helvetica, sans-serif;
+	background-color:#FAFAFA;
+	font-weight:500;
+}
+ul{
+	list-style:none;
+}
+
+.jumbotron{
+	background-color:#0e2634;
+	height:300px;
+	width:100%;
+	position:relative;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+.MainImage{
+	display:block;
+	height:150px;
+	width:150px;
+	border-radius:75px;
+	margin:0 auto;
+}
+
+.jumbotron h1{
+	font-size:60px;
+	font-weight:100;
+	letter-spacing:1px;
+	text-align:center;
+	color:#fff;
+	margin-top:-10px;
+	margin-bottom:10px;
+}
+
+.jumbotron h3{
+	font-size:30px;
+	font-weight:900;
+	text-align:center;
+	color:#79BD9A;
+	margin-top:0;
+}
+
+.social, .content{
+	width:600px;
+	border-bottom:1px dotted black;
+}
+
+.content{
+	margin:0 auto;
+	padding-top:40px;
+	padding-bottom:30px;
+}
+
+.social, .content h1{
+	text-align:center;
+}
+
+.social{
+	margin:30px auto;
+	padding-bottom:30px;
+}
+
+ul li{
+	display:inline;
+}
+.social li a{
+	position:relative;
+	right:20px;
+	padding:15px;
+	color:#74C2E1;
+	background-color:#74C2E1;
+	border-radius:10px;
+	margin:0 15px;
+	text-align:center;
+	transition: all .3s linear;
+}
+
+.social li a:hover{
+	background-color:#6B6B6B;
+}
+
+footer{
+	margin:30px;
+	text-align:center;
+}
