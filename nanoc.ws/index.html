@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>nanoc.ws repro</title>
 	<link rel="stylesheet" href="style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300, 400,600,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header class="mainheader">
@@ -20,21 +21,15 @@
 	</header>
 	<div class="headline">
 		<h1>
-			nanoc is a static site generator, fit for building anything from a small personal blog to a large corporate web site.
+			nanoc is a <em>static site generator</em>, fit for building anything from a small personal blog to a large corporate web site.
 		</h1>
 	</div>
 	<div class="examples">
-		<ul>
-			<li>
-				<a href="#">Img1</a>
-			</li>
-			<li>
-				<a href="#">Img2</a>
-			</li>
-			<li>
-				<a href="#">Img3</a>
-			</li>
-		</ul>
+		<div class="slides">
+			<div class="slide" id="1"><a href="#"><img src="Lighthouse.jpg"></img></a></div>
+			<div class="slide" id="2"><a href="#"><img src="Penguins.jpg"></img></a></div>
+			<div class="slide" id="3"><a href="#"><img src="Koala.jpg"></img></a></div>
+		</div>
 	</div>
 	<div class="divider">
 		<h3>
@@ -112,5 +107,7 @@
 		nanoc © 2007–2013 Denis Defreyne. The content of the nanoc web site is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License. nanoc is licenced under the MIT licence. Entypo pictograms by Daniel Bruce. Subtle Patterns by Atle Mo.
 	</p>
 </footer>
+<script src="jquery.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
