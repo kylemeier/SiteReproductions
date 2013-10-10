@@ -1,0 +1,38 @@
+html, body, div, nav, ul, li, a{
+	margin:0;
+	padding:0;
+	text-decoration: none;
+
+}
+
+ul{
+	list-style-type: none;
+}
+
+.mainheader{
+	background-color:#484846;
+	height:40px;
+	width:100%;
+}
+
+.mainnav{
+	max-width:940px;
+	height:inherit;
+	background-color:#1c1c1c;
+	margin:0 auto;
+}
+
+.mainnav ul li{
+	float:left;
+	border-right:1px solid #484846;
+	padding:10px 16px;
+}
+
+.mainnav ul li a{
+	color:#ddd6d4;
+}
+
+.mainnav ul li a:hover{
+	color:#fff;
+}
+
