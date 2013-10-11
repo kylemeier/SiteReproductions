@@ -1,4 +1,4 @@
-html, body, div, nav, ul, li, a{
+html, body, div, nav, ul, li, a, h1, p{
 	margin:0;
 	padding:0;
 	text-decoration: none;
@@ -9,17 +9,31 @@ ul{
 	list-style-type: none;
 }
 
-.mainheader{
+a{
+	font:inherit;
+	color: #ddd6d4;
+	background-color:#5a5a58;
+}
+
+a:hover{
+	font:inherit; 
+	color: #000;
+	background-color:#ddd6d4;
+}	
+
+
+.header{
 	background-color:#484846;
 	height:40px;
 	width:100%;
+	margin:0;
 }
 
 .mainnav{
 	max-width:940px;
 	height:inherit;
 	background-color:#1c1c1c;
-	margin:0 auto;
+	margin:0 auto;	
 }
 
 .mainnav ul li{
@@ -29,12 +43,13 @@ ul{
 }
 
 .mainnav ul li a{
-	color:#ddd6d4;
+	background-color:#1c1c1c;
 }
 
 .mainnav ul li a:hover{
 	color:#fff;
 }
+
 .headline{
 	width:100%;
 	height:150px;
@@ -62,6 +77,7 @@ ul{
 	overflow:hidden;
 	position:relative;
 	padding-top:20px;
+	margin-bottom:0;
 }
 
 .examples .slides{
@@ -84,4 +100,15 @@ ul{
 	top:0;
 	left:0;
 	opacity:0;
+}
+.divider{
+	color:#b0aba9;
+}
+
+.divider p{
+	font:inherit;
+	font-size:13px;
+	color:#b0aba9;
+	text-align:center;
+	padding:10px 0;
 }
