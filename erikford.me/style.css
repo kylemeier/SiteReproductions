@@ -1,0 +1,45 @@
+body{
+	font: 700 16px 'Roboto', sans-serif;
+	margin:0;
+	padding:0;
+}
+
+ul{
+	list-style-type: none;
+}
+
+a{
+	color:white;
+	text-decoration: none;
+}
+
+.main{
+	height:100px;
+	background-color:#f5f5f5;
+}
+
+.nav-icons{
+	float:right;
+	width:40%;
+}
+.nav-icons ul li{
+	float:right;
+	color:black;
+	text-align:center;
+}
+
+.nav-icons ul li a{
+	padding-left:40px;
+	padding-right:40px;
+	margin-top:-36px;
+	display:inline-block;
+	color:black;
+	vertical-align:middle;
+	line-height:100px;
+	transition: all .2s ease-in-out;
+}
+
+.nav-icons ul li a:hover{
+	color:white;
+	background-color:black;
+}
