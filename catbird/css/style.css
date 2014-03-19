@@ -19,7 +19,6 @@ body {
 .right-arrow:after {
   font-family: 'navarrows';
   content: "\e601";
-  font-size: 1.5em;
   vertical-align: middle;
   display: inline; }
 
@@ -42,7 +41,7 @@ body {
     .mainnav a:hover {
       color: #fff; }
   .mainnav h1 {
-    padding-left: 50px; }
+    margin: 0 20px 0 50px; }
     .mainnav h1 a {
       color: #fff; }
   .mainnav ul {
@@ -86,3 +85,14 @@ body {
             color: #000; }
             .mainnav ul li:hover ul li:hover ul li a:hover {
               color: #08c; }
+
+#login {
+  background: linear-gradient(#49afcd, #2f96b4);
+  border-radius: 5px;
+  font-weight: normal;
+  color: #fff;
+  text-shadow: -1px -1px #000;
+  margin: 0 30px; }
+  #login:hover {
+    background: linear-gradient(#2f96b4, #49afcd);
+    color: #EBEBEB; }

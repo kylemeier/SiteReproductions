@@ -24,11 +24,8 @@ font-family: arial,helvetica,sans-serif;
 .right-arrow:after{
 	font-family:'navarrows';
 	content:"\e601";
-	font-size:1.5em;
 	vertical-align:middle;
-	display:inline;
-
-	
+	display:inline;	
 }
 .mainnav{
 	list-style:none;
@@ -53,7 +50,7 @@ font-family: arial,helvetica,sans-serif;
 		}
 	}
 	h1{
-		padding-left:50px;
+		margin: 0 20px 0 50px;
 		a{
 			color:#fff;
 		}
@@ -92,46 +89,50 @@ font-family: arial,helvetica,sans-serif;
 			a{
 				color:#fff;
 			}
-		ul{
-			left:0;
-			a{
-				color:#000;
-				&:hover{
-					color:#08c;
-				}
-			}
 			ul{
-				left:-9999px;
-			}
-			li:hover ul{
-				left:90%;
-				top:0%;
-				z-index:1;
-
-				li{
-					float:none;
-					a{
-						color:#000;
-						&:hover{
-							color:#08c;
+				left:0;
+				a{
+					color:#000;
+					&:hover{
+						color:#08c;
+					}
+				}
+				ul{
+					left:-9999px;
+				}
+				li:hover ul{
+					left:90%;
+					top:0%;
+					z-index:1;
+	
+					li{
+						float:none;
+						a{
+							color:#000;
+							&:hover{
+								color:#08c;
+							}
 						}
 					}
 				}
 			}
 		}
-		}		
 		
 	}
 }
 
-			//add this to cutomer login
-			// &:last-child{
-			// 	a{
-			// 		background: linear-gradient(#49afcd,#2f96b4);
-			// 		padding:10px;
-			// 		border-radius:5px;
-			// 		font-weight:normal;
-			// 		color:#fff;
-			// 		text-shadow: -1px -1px #000;
-			// 	}
-			// }	
+
+#login{
+	background: linear-gradient(#49afcd,#2f96b4);
+
+	border-radius:5px;
+	font-weight:normal;
+	color:#fff;
+	text-shadow: -1px -1px #000;
+	margin:0 30px;
+	&:hover{
+	background: linear-gradient(#2f96b4,#49afcd);
+	color:#EBEBEB;
+	}
+}
+	
