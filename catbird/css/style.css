@@ -21,8 +21,7 @@ body {
   content: "\e601";
   font-size: 1.5em;
   vertical-align: middle;
-  display: inline;
-  right: 0%; }
+  display: inline; }
 
 .mainnav {
   list-style: none;
