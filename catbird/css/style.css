@@ -1,7 +1,28 @@
+@font-face {
+  font-family: 'navarrows';
+  src: url("../fonts/navarrows.eot?5lcf2g");
+  src: url("../fonts/navarrows.eot?#iefix5lcf2g") format("embedded-opentype"), url("../fonts/navarrows.woff?5lcf2g") format("woff"), url("../fonts/navarrows.ttf?5lcf2g") format("truetype"), url("../fonts/navarrows.svg?5lcf2g#navarrows") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   background-color: #FFF;
   color: #222;
   font-family: arial,helvetica,sans-serif; }
+
+.down-arrow:after {
+  font-family: 'navarrows';
+  content: "\e600";
+  color: #fff;
+  vertical-align: middle; }
+
+.right-arrow:after {
+  font-family: 'navarrows';
+  content: "\e601";
+  font-size: 1.5em;
+  vertical-align: middle;
+  display: inline;
+  right: 0%; }
 
 .mainnav {
   list-style: none;
@@ -23,6 +44,8 @@ body {
       color: #fff; }
   .mainnav h1 {
     padding-left: 50px; }
+    .mainnav h1 a {
+      color: #fff; }
   .mainnav ul {
     line-height: 68px; }
     .mainnav ul ul {
@@ -30,20 +53,37 @@ body {
       background: #fff;
       position: absolute;
       left: -9999px;
-      border: 1px solid #f0f0f0;
+      border: 1px solid #B2B2B2;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
       border-radius: 5px; }
-      .mainnav ul ul li {
-        margin-right: 0px; }
-        .mainnav ul ul li a {
-          text-transform: none;
-          color: #000;
-          font-weight: normal;
-          font-size: .9em;
-          padding: 10px 20px; }
-        .mainnav ul ul li:hover a {
-          color: #08c; }
+      .mainnav ul ul li a {
+        text-transform: none;
+        color: #000;
+        text-align: center;
+        font-weight: normal;
+        font-size: .9em;
+        padding: 10px 20px; }
+      .mainnav ul ul li:hover a {
+        color: #08c; }
       .mainnav ul ul a {
         white-space: nowrap; }
+    .mainnav ul li:hover a {
+      color: #fff; }
     .mainnav ul li:hover ul {
       left: 0; }
+      .mainnav ul li:hover ul a {
+        color: #000; }
+        .mainnav ul li:hover ul a:hover {
+          color: #08c; }
+      .mainnav ul li:hover ul ul {
+        left: -9999px; }
+      .mainnav ul li:hover ul li:hover ul {
+        left: 90%;
+        top: 0%;
+        z-index: 1; }
+        .mainnav ul li:hover ul li:hover ul li {
+          float: none; }
+          .mainnav ul li:hover ul li:hover ul li a {
+            color: #000; }
+            .mainnav ul li:hover ul li:hover ul li a:hover {
+              color: #08c; }
