@@ -112,7 +112,8 @@ body {
   top: 78px;
   right: 15%;
   font-size: 1em;
-  z-index: 998; }
+  z-index: 998;
+  float: right; }
   .actionbuttons ul li {
     float: left; }
 
@@ -164,7 +165,6 @@ footer {
       footer #left-footer #social li {
         background: #72BFE7;
         float: left;
-        padding: 10px;
         border-radius: 30px;
         border: 1px solid #fff;
         margin: 20px 0 20px 5%; }
@@ -173,28 +173,38 @@ footer {
         footer #left-footer #social li #twitter-icon:after {
           font-family: 'icons';
           content: "\e607";
+          padding: 10px;
           color: #fff;
-          vertical-align: middle; }
+          vertical-align: middle;
+          display: inline-block; }
         footer #left-footer #social li #facebook-icon:after {
           font-family: 'icons';
           content: "\e608";
+          padding: 10px;
           color: #fff;
-          vertical-align: middle; }
+          vertical-align: middle;
+          display: inline-block; }
         footer #left-footer #social li #gplus-icon:after {
           font-family: 'icons';
           content: "\e609";
+          padding: 10px;
           color: #fff;
-          vertical-align: middle; }
+          vertical-align: middle;
+          display: inline-block; }
         footer #left-footer #social li #linkedin-icon:after {
           font-family: 'icons';
           content: "\e60a";
+          padding: 10px;
           color: #fff;
-          vertical-align: middle; }
+          vertical-align: middle;
+          display: inline-block; }
         footer #left-footer #social li #youtube-icon:after {
           font-family: 'icons';
           content: "\e604";
+          padding: 10px;
           color: #fff;
-          vertical-align: middle; }
+          vertical-align: middle;
+          display: inline-block; }
         footer #left-footer #social li:hover {
           background: #7ED3FF; }
     footer #left-footer #emailform {
@@ -260,37 +270,24 @@ footer {
   #brand {
     margin-right: 0; }
 
-  footer #left-footer #social li {
-    padding: 20px;
-    margin-bottom: 0px; }
-    footer #left-footer #social li:nth-last-child(2), footer #left-footer #social li:last-child {
-      position: relative;
-      left: 20px;
-      margin-top: 10px;
-      margin-bottom: 20px; }
-
   .container {
     margin: 0 10%; }
     .container #right-footer ul {
       margin-right: 5%; } }
-@media (max-width: 1060px) {
+@media (max-width: 1100px) {
   footer {
     height: 650px; }
     footer #left-footer {
       width: 100%; }
-      footer #left-footer #social li {
-        margin: 20px 0 20px 2.5%; }
-        footer #left-footer #social li:nth-last-child(2), footer #left-footer #social li:last-child {
-          left: 0;
-          margin-top: 20px; }
       footer #left-footer #emailform .email-icon:after {
-        width: 30px; }
+        width: 30px;
+        padding-bottom: 8px; }
       footer #left-footer #emailform #emailaddress {
         border-radius: 0;
         padding: 5px;
         border: 1px solid #D4D4D4;
         box-sizing: border-box;
-        width: 70%;
+        width: 60%;
         max-width: 300px; }
       footer #left-footer .submit {
         float: none;
@@ -306,6 +303,17 @@ footer {
       margin: 0px;
       margin-top: 30px; } }
 @media (max-width: 720px) {
+  .mainnav {
+    position: relative; }
+
+  .actionbuttons {
+    position: relative;
+    top: -60px;
+    right: 15%;
+    font-size: 1em;
+    z-index: 998;
+    float: right; }
+
   footer {
     text-align: center;
     height: 1300px; }
