@@ -8,16 +8,17 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
 background-color: #FFF;
 color: #222;
 font-family: arial,helvetica,sans-serif;
-}
-
-#logo {
-font-size: 1em;
-position: relative;
-vertical-align: top;
 }
 
 .down-arrow:after{
@@ -74,7 +75,7 @@ vertical-align: top;
 		}
 	}
 	h1{
-		margin-right:250px;
+		margin-right:200px;
 		margin-left:-10px;
 		a{
 			color:#fff;
@@ -160,7 +161,7 @@ vertical-align: top;
 }
 
 
-#trynow{
+.warmbutton{
 	background: linear-gradient(#fbb450,#f89406);
 	border-radius:0 0 0 5px;
 	padding:10px;
@@ -174,7 +175,7 @@ vertical-align: top;
 	color:#EBEBEB;
 	}
 }
-#login{
+.coolbutton{
 	border:1px solid #2f96b4;
 	background: linear-gradient(#49afcd,#2f96b4);
 	border-radius:0 0 5px 0;
@@ -197,55 +198,251 @@ footer{
 	background:#4D5357;
 	border-top:5px solid #000;
 	margin:30px 0;
-	.social{
-		margin-top:20px;
-		color:#72BFE7;
+	height:400px;
+	font-size:.8em;
+	#left-footer{
 		width:25%;
-		li{
-			background:#72BFE7;
-			float:left;
-			padding:10px;
-			border-radius:30px;
-			border:1px solid #fff;
-			margin:10px 10px 20px 10px;
-			&:hover{
-				background:#7ED3FF;
+	 	color:#72BFE7;
+	 	float:left;
+	 	h1{
+			display:inline-block;	
+		}
+		#social{
+			margin:20px 0;
+			ul{
+				border-top:1px solid #fff;
+			}
+			li{
+				background:#72BFE7;
+				float:left;
+				padding:10px;
+				border-radius:30px;
+				border:1px solid #fff;
+				margin:20px 0 20px 5%;
+				&:first-child{
+					margin-left:0;
+				}
+				#twitter-icon:after{
+					font-family:'icons';
+					content:"\e607";
+					color:#fff;
+					vertical-align:middle;
+				}
+				#facebook-icon:after{
+					font-family:'icons';
+					content:"\e608";
+					color:#fff;
+					vertical-align:middle;
+				}
+				#gplus-icon:after{
+					font-family:'icons';
+					content:"\e609";
+					color:#fff;
+					vertical-align:middle;
+				}
+				#linkedin-icon:after{
+					font-family:'icons';
+					content:"\e60a";
+					color:#fff;
+					vertical-align:middle;
+				}
+				#youtube-icon:after{
+					font-family:'icons';
+					content:"\e604";
+					color:#fff;
+					vertical-align:middle;
+				}
+				&:hover{
+					background:#7ED3FF;
+				}
 			}
 		}
-		h1{
-			border-bottom:1px solid #fff;	
+
+		#emailform{
+			padding-top:10px;
+			border-top:1px solid #fff;
+
+			.email-icon:after{
+				font-family:'icons';
+				content:"\e606";
+				color:#fff;
+				vertical-align:middle;
+				background:#72BFE7;
+				padding:7px;
+				border-radius: 5px 0 0 5px;
+				float:left;
+				box-sizing:border-box;
+				width:10%;
+				text-align:center;
+			}
+
+			#emailaddress{
+				border-radius: 0 5px 5px 0;
+				padding:5px;
+				border:1px solid #D4D4D4;
+				box-sizing:border-box;
+				width:90%;
+			}
+		}
+		.submit{
+			font-size:.9em;
+			float:right;
+			border-radius:5px;
+			box-shadow:none;
+			padding:5px 10px;
+			box-sizing:border-box;
+		}
+	}
+	#right-footer{
+		box-sizing: border-box;
+		position:relative;
+		width:70%;
+		height:360px;
+		display:inline-block;
+		border-left: 1px solid #666;
+		padding-left:2%;
+		margin:20px 0 0 2%;
+		line-height:30px;
+
+		ul{
+			float:left;
+			margin-right:10%;
+			color:#fff;
+			a{
+				color:#fff;
+			}
+			h1{
+				margin-bottom:10px;
+				color:#E1953E;
+			}
+			&:last-child{
+				margin-right:0%;
+			}
 		}
 	}
 }
-.twitter-icon:after{
-	font-family:'icons';
-	content:"\e607";
-	color:#fff;
-	vertical-align:middle;
+
+@media (max-width: 1590px){
+	#brand{
+		margin-right:100px;
+	}
+	.container{
+	margin:0 10%;
+		#right-footer{
+			ul{
+				// margin-right:5%;
+			}
+		}
+	}
 
 }
-.facebook-icon:after{
-	font-family:'icons';
-	content:"\e608";
-	color:#fff;
-	vertical-align:middle;
+
+@media (max-width: 1280px){
+	.mainnav{
+		font-size:.8em;
+	}
+		#brand{
+		margin-right:0;
+	}
+
+	footer{
+		#left-footer{
+			#social{
+				li{
+					padding:20px;
+					margin-bottom:0px;
+					&:nth-last-child(2), &:last-child{
+						position:relative;
+						left:20px;
+						margin-top:10px;
+						margin-bottom:20px;
+					}
+				}
+			}
+			
+		}
+	}
+	.container{
+		margin:0 10%;
+
+		#right-footer{
+			ul{
+			margin-right:5%;
+			}
+		}
+	}
 }
-.gplus-icon:after{
-	font-family:'icons';
-	content:"\e609";
-	color:#fff;
-	vertical-align:middle;
+
+@media (max-width: 1060px){
+	footer{
+		height:650px;
+		#left-footer{
+			width:100%;
+			#social{
+				li{
+					margin:20px 0 20px 2.5%;
+					&:nth-last-child(2), &:last-child{
+						left:0;
+						margin-top:20px;
+
+					}
+				}
+			}
+			#emailform{
+				.email-icon:after{
+					width:30px;
+	
+				}
+	
+				#emailaddress{
+					border-radius:0;
+					padding:5px;
+					border:1px solid #D4D4D4;
+					box-sizing:border-box;
+					width:70%;
+					max-width:300px;
+
+				}
+			}
+			.submit{
+				float:none;
+				border-radius:0 5px 5px 0;
+				box-shadow:none;
+				padding-top:6px;
+				margin-left:-4px;
+			}
+		}
+		#right-footer{
+			width:100%;
+			border-left:none;
+			border-top: 1px solid #666;
+			padding-left:0%;
+			margin:0px;
+			margin-top:30px;			
+		}
+	}
 }
-.linkedin-icon:after{
-	font-family:'icons';
-	content:"\e60a";
-	color:#fff;
-	vertical-align:middle;
+
+@media (max-width: 720px){
+	footer{
+		text-align:center;
+		height:1300px;
+		#left-footer{
+			text-align:left;
+			
+		}
+		.container{
+			#right-footer{
+				ul{
+					margin-right:0%;
+					h1{
+						margin-top:20px;
+					}
+					float:none;
+				}
+			}
+		}
+	}
 }
-.youtube-icon:after{
-	font-family:'icons';
-	content:"\e604";
-	color:#fff;
-	vertical-align:middle;
-}
+
 

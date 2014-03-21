@@ -12,7 +12,7 @@
 	<div class="container">
 	<ul>
 		<li>
-			<h1><a href="#" id="logo"><img src="images/catbird_logo.png"></a><span class="phone">&nbsp;866.682.0080</span></h1>
+			<h1 id="brand"><a href="#"><img src="images/catbird_logo.png"></a><span class="phone">&nbsp;866.682.0080</span></h1>
 		</li>
 		
 		<li>
@@ -104,8 +104,8 @@
 
 <div class="actionbuttons">
 	<ul>
-	<li><a href="#" id="trynow">Try Now</a></li>
-	<li><a href="#" id="login">Customer Login</a></li>
+	<li><a href="#" class="warmbutton">Try Now</a></li>
+	<li><a href="#" class="coolbutton">Customer Login</a></li>
 	</ul>
 </div>
 <div id="SnapABug_Button">
@@ -138,57 +138,65 @@
 </div>
 <footer>
 	<div class="container">
-		<div class="social">
-			<h1>CONNECT WITH US</h1>
-			<ul>
-				<li><a href="#"><span class="twitter-icon"></span></a></li>
-				<li><a href="#"><span class="facebook-icon"></span></a></li>
-				<li><a href="#"><span class="gplus-icon"></span></a></li>
-				<li><a href="#"><span class="linkedin-icon"></span></a></li>
-				<li><a href="#"><span class="youtube-icon"></span></a></li>
-			</ul>
-			<h1>RECEIVE PERIODIC NEWS FROM CATBIRD</h1>
-			<input type="email" name="email" placeholder="Email"></input>
-			<a class="actionbutton2">Submit</a>
+		<div id="left-footer">
+			<div id="social">
+				<h1>CONNECT WITH US</h1>
+				<ul class="group">
+					<li><a href="#"><span id="twitter-icon"></span></a></li>
+					<li><a href="#"><span id="facebook-icon"></span></a></li>
+					<li><a href="#"><span id="gplus-icon"></span></a></li>
+					<li><a href="#"><span id="linkedin-icon"></span></a></li>
+					<li><a href="#"><span id="youtube-icon"></span></a></li>
+				</ul>
+
+			</div>
+				<h1>RECEIVE PERIODIC NEWS FROM CATBIRD</h1>
+		<form action="#" method="post" id="emailform">
+			<span class="email-icon"></span>
+			<input type="email" name="email" placeholder="Email" id="emailaddress" required>
+			<input type="submit" class="warmbutton submit">
+		</form>
 		</div>
-		<div class="footer-links">
-			<ul>
-				<li><h1>PRODUCT</h1></li>
-				<li><a href="#">Overview</a></li>
-				<li><a href="#">Features</a></li>
-				<li><a href="#">How It Works</a></li>
-				<li><a href="#">Integration</a></li>
-			</ul>
-			<ul>
-				<li><h1>SOLUTIONS</h1></li>
-				<li><a href="#">Compliance</a></li>
-				<li><a href="#">Financial Services</a></li>
-				<li><a href="#">Government</a></li>
-				<li><a href="#">Healthcare</a></li>
-				<li><a href="#">Higher Education</a></li>
-				<li><a href="#">Hypervisor Shield</a></li>
-				<li><a href="#">Secure Application Delivery</a></li>
-				<li><a href="#">VDI</a></li>
-			</ul>
-			<ul>
-				<li><h1>RESOURCES</h1></li>
-				<li><a href="#">Case Studies</a></li>
-				<li><a href="#">Datasheets</a></li>
-				<li><a href="#">Videos</a></li>
-				<li><a href="#">Webinars & Podcasts</a></li>
-				<li><a href="#">White Papers</a></li>
-			</ul>
-			<ul>
-				<li><h1>COMPANY</h1></li>
-				<li><a href="#">About Catbird</a></li>
-				<li><a href="#">Careers</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#">Events</a>News</li>
-				<li><a href="#">Partner Program</a></li>
-				<li><a href="#">Partners & Alliances</a></li>
-				<li><a href="#">Press Releases</a></li>
-			</ul>
+		<div id="right-footer">
+			<!-- <div class="footer-links"> -->
+				<ul>
+					<li><h1>PRODUCT</h1></li>
+					<li><a href="#">Overview</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">How It Works</a></li>
+					<li><a href="#">Integration</a></li>
+				</ul>
+				<ul>
+					<li><h1>SOLUTIONS</h1></li>
+					<li><a href="#">Compliance</a></li>
+					<li><a href="#">Financial Services</a></li>
+					<li><a href="#">Government</a></li>
+					<li><a href="#">Healthcare</a></li>
+					<li><a href="#">Higher Education</a></li>
+					<li><a href="#">Hypervisor Shield</a></li>
+					<li><a href="#">Secure Application Delivery</a></li>
+					<li><a href="#">VDI</a></li>
+				</ul>
+				<ul>
+					<li><h1>RESOURCES</h1></li>
+					<li><a href="#">Case Studies</a></li>
+					<li><a href="#">Datasheets</a></li>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">Webinars & Podcasts</a></li>
+					<li><a href="#">White Papers</a></li>
+				</ul>
+				<ul>
+					<li><h1>COMPANY</h1></li>
+					<li><a href="#">About Catbird</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Partner Program</a></li>
+					<li><a href="#">Partners & Alliances</a></li>
+					<li><a href="#">Press Releases</a></li>
+				</ul>
+			<!-- </div> -->
 		</div>
 	</div>
 </footer>
