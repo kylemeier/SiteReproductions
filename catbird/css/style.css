@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icons';
-  src: url("../fonts/icons.eot?6nkd5v");
-  src: url("../fonts/icons.eot?#iefix6nkd5v") format("embedded-opentype"), url("../fonts/icons.woff?6nkd5v") format("woff"), url("../fonts/icons.ttf?6nkd5v") format("truetype"), url("../fonts/icons.svg?6nkd5v#icons") format("svg");
+  src: url("../fonts/icons.eot?-23outc");
+  src: url("../fonts/icons.eot?#iefix-23outc") format("embedded-opentype"), url("../fonts/icons.woff?-23outc") format("woff"), url("../fonts/icons.ttf?-23outc") format("truetype"), url("../fonts/icons.svg?-23outc#icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -226,15 +226,14 @@ footer {
         border-radius: 0 5px 5px 0;
         padding: 5px;
         border: 1px solid #D4D4D4;
-        box-sizing: border-box;
-        width: 90%; }
+        width: 90%;
+        box-sizing: border-box; }
     footer #left-footer .submit {
       font-size: .9em;
       float: right;
       border-radius: 5px;
       box-shadow: none;
-      padding: 5px 10px;
-      box-sizing: border-box; }
+      padding: 5px 10px; }
   footer #right-footer {
     box-sizing: border-box;
     position: relative;
@@ -303,8 +302,26 @@ footer {
       margin: 0px;
       margin-top: 30px; } }
 @media (max-width: 1000px) {
+  .container {
+    margin: 0 3%; }
+
   .mainnav {
+    height: 40px;
     position: relative; }
+    .mainnav #brand img {
+      max-width: 100px; }
+    .mainnav .navbar-collapse {
+      display: none; }
+
+  .navicon {
+    float: right;
+    vertical-align: center; }
+    .navicon:after {
+      font-family: 'icons';
+      font-size: 2em;
+      content: "\e603";
+      color: #fff;
+      float: right; }
 
   .actionbuttons {
     position: relative;
