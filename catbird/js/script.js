@@ -1,17 +1,12 @@
+	menu        = $('#navbar-toggle');
 
-var navicon = document.getElementById('navicon');
+	$('#navicon').click(function(){
+		menu.slideToggle(300);
+	});
 
-navicon.addEventListener('click', function() {
-    var d = document.getElementById('navbar-toggle');
-    if (d.className == 'navbar-collapse'){
-	d.className = 'navbar-expand';
-	}else{
-		d.className = "navbar-collapse";	
-	}
-}, false);
-
-// navicon.addEventListener('click', function() {
-//     var d = document.getElementById('navbar-toggle');
-// 	d.className = "navbar-collapse";
-// }, false);
-
+$(window).resize(function(){
+    var w = $(window).width();  
+    if(w > 1000 && menu.is(':hidden')) {
+        menu.removeAttr('style');
+    }
+});
