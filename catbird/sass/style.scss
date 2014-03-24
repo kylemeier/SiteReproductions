@@ -213,8 +213,12 @@ footer{
 		}
 		#social{
 			margin:20px 0;
+			h1{
+				width:100%;
+				border-bottom:1px solid #fff;
+			}
 			ul{
-				border-top:1px solid #fff;
+				
 			}
 			li{
 				background:#72BFE7;
@@ -353,17 +357,22 @@ footer{
 	}
 	.container{
 		margin:0 10%;
-
-		#right-footer{
-			ul{
-			margin-right:5%;
-			}
-		}
 	}
 	footer{
 		height:550px;
 		#left-footer{
 			width:100%;
+			#social{
+				h1{
+					width:100%;
+					border-bottom: 1px solid #fff;
+				}
+				ul{
+					width:220px;
+					margin: 0 auto;
+
+				}
+			}
 			#emailform{
 				.email-icon:after{
 					width:30px;
@@ -423,11 +432,14 @@ footer{
 		.phone{
 			line-height:50px;
 		}
+		#navbar-toggle{
+			display:none;
+		}
 		#navicon{
 			float:right;
 			display:inline;
 			position:relative;
-			top:-55px;
+			top:-60px;
 			padding:none;
 			&:after{		
 				font-family:'icons';

@@ -163,8 +163,9 @@ footer {
       display: inline-block; }
     footer #left-footer #social {
       margin: 20px 0; }
-      footer #left-footer #social ul {
-        border-top: 1px solid #fff; }
+      footer #left-footer #social h1 {
+        width: 100%;
+        border-bottom: 1px solid #fff; }
       footer #left-footer #social li {
         background: #72BFE7;
         float: left;
@@ -274,13 +275,17 @@ footer {
 
   .container {
     margin: 0 10%; }
-    .container #right-footer ul {
-      margin-right: 5%; }
 
   footer {
     height: 550px; }
     footer #left-footer {
       width: 100%; }
+      footer #left-footer #social h1 {
+        width: 100%;
+        border-bottom: 1px solid #fff; }
+      footer #left-footer #social ul {
+        width: 220px;
+        margin: 0 auto; }
       footer #left-footer #emailform .email-icon:after {
         width: 30px;
         padding-bottom: 8px; }
@@ -322,11 +327,13 @@ footer {
       max-width: 100px; }
     .mainnav .phone {
       line-height: 50px; }
+    .mainnav #navbar-toggle {
+      display: none; }
     .mainnav #navicon {
       float: right;
       display: inline;
       position: relative;
-      top: -55px;
+      top: -60px;
       padding: none; }
       .mainnav #navicon:after {
         font-family: 'icons';
