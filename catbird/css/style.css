@@ -306,17 +306,65 @@ footer {
     margin: 0 3%; }
 
   .mainnav {
-    height: 40px;
+    height: auto;
     position: relative; }
     .mainnav #brand img {
       max-width: 100px; }
-    .mainnav .navbar-collapse {
-      display: none; }
+    .mainnav li {
+      float: none;
+      position: relative; }
+    .mainnav ul {
+      line-height: 40px; }
+      .mainnav ul ul {
+        line-height: 40px;
+        background: #fff;
+        background: rgba(255, 255, 255, 0);
+        position: absolute;
+        border: none;
+        box-shadow: none; }
+        .mainnav ul ul li a {
+          text-transform: uppercase;
+          color: #000;
+          text-align: center;
+          font-weight: normal;
+          font-size: .9em;
+          padding: 10px 20px; }
+        .mainnav ul ul li:hover a {
+          color: #fff; }
+        .mainnav ul ul a {
+          white-space: nowrap; }
+      .mainnav ul li:hover a {
+        color: #fff; }
+      .mainnav ul li:hover ul {
+        position: relative;
+        left: 15px; }
+        .mainnav ul li:hover ul a {
+          color: #E1953E; }
+          .mainnav ul li:hover ul a:hover {
+            color: #fff; }
+        .mainnav ul li:hover ul ul {
+          display: none; }
+        .mainnav ul li:hover ul li:hover ul {
+          display: block;
+          left: 50px;
+          width: 70%;
+          z-index: 1; }
+          .mainnav ul li:hover ul li:hover ul li {
+            float: none; }
+            .mainnav ul li:hover ul li:hover ul li a {
+              color: #E1953E;
+              font-size: 1em;
+              line-height: 10px;
+              text-transform: none; }
+              .mainnav ul li:hover ul li:hover ul li a:hover {
+                color: #fff; }
 
-  .navicon {
+  #navicon {
     float: right;
+    display: inline;
+    position: relative;
     vertical-align: center; }
-    .navicon:after {
+    #navicon:after {
       font-family: 'icons';
       font-size: 2em;
       content: "\e603";

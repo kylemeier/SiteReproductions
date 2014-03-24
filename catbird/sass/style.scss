@@ -399,28 +399,107 @@ footer{
 	.container{
 		margin:0 3%;
 	}
+
 	.mainnav{
-		height:40px; 
+		height:auto;
+		//height:40px;
+		position:relative;
 		#brand{
 			img{
 				max-width:100px;
 			}
 		}
-		position:relative;
-		.navbar-collapse{
-			display:none;
+		li{
+			float:none;
+			position:relative;	
+		}
+		ul{
+			line-height:40px;
+			ul{
+			line-height:40px;
+			background:#fff;
+			background:rgba(255,255,255,0);
+	    	position:absolute;
+	    	// left:-9999px;
+			border:none;
+			box-shadow:none;
+			
+				li{
+					a{
+						text-transform:uppercase;
+						color:#000;
+						text-align:center;
+						font-weight:normal;
+						font-size:.9em;
+						padding:10px 20px;
+					}
+					&:hover a{
+						color:#fff;
+					}
+	
+				}
+				a{
+					white-space:nowrap;
+				}
+			
+			}
+			li:hover{ 
+				a{
+					color:#fff;
+				}
+				ul{
+					position:relative;
+					left:15px;
+					a{
+						// color:#FFC27F;
+						color:#E1953E;
+						&:hover{
+							color:#fff;
+						}
+					}
+					ul{
+						display:none;
+					}
+					li:hover ul{
+						display:block;
+						left:50px;
+						width:70%;
+						z-index:1;
+		
+						li{
+							float:none;
+
+							a{
+								color:#E1953E;
+								font-size:1em;
+								line-height:10px;
+								text-transform:none;
+
+							
+								&:hover{
+									color:#fff;
+								}
+							}
+						}
+					}
+				}
+			}
+			
 		}
 	}
-	.navicon{
+	
+	#navicon{
 		float:right;
+		display:inline;
+		position:relative;
 		vertical-align:center;
 		&:after{		
-		font-family:'icons';
-		font-size:2em;
-		content:"\e603";
-		color:#fff;
-		float:right;
-		}
+			font-family:'icons';
+			font-size:2em;
+			content:"\e603";
+			color:#fff;
+			float:right;
+		}		
 	}
 	.actionbuttons{
 		position:relative;

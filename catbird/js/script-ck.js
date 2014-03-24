@@ -1,0 +1,1 @@
+var navicon=document.getElementById("navicon");navicon.addEventListener("click",function(){var e=document.getElementById("navbar-toggle");e.className=="navbar-collapse"?e.className="navbar-expand":e.className="navbar-collapse"},!1);
