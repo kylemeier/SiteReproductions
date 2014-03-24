@@ -315,14 +315,13 @@ footer {
     vertical-align: middle;
     display: inline; }
 
-  .navbar-collapse {
-    display: none; }
-
   .mainnav {
     height: auto;
     position: relative; }
     .mainnav #brand img {
       max-width: 100px; }
+    .mainnav .phone {
+      line-height: 50px; }
     .mainnav #navicon {
       float: right;
       display: inline;

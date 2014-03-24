@@ -113,7 +113,7 @@ font-family: arial,helvetica,sans-serif;
 			a{
 				white-space:nowrap;
 			}
-		
+
 		}
 		li:hover{ 
 			a{
@@ -134,7 +134,7 @@ font-family: arial,helvetica,sans-serif;
 					left:90%;
 					top:0%;
 					z-index:1;
-	
+
 					li{
 						float:none;
 						a{
@@ -147,7 +147,7 @@ font-family: arial,helvetica,sans-serif;
 				}
 			}
 		}
-		
+
 	}
 }
 
@@ -369,7 +369,7 @@ footer{
 					width:30px;
 					padding-bottom:8px;
 				}
-	
+
 				#emailaddress{
 					border-radius:0;
 					padding:5px;
@@ -411,14 +411,6 @@ footer{
 	vertical-align:middle;
 	display:inline;	
 }
-	#navbar-toggle{
-	}
-	.navbar-collapse{
-		display:none;
-
-	}
-	.navbar-expand{
-	}
 
 	.mainnav{
 		height:auto;
@@ -427,6 +419,9 @@ footer{
 			img{
 				max-width:100px;
 			}
+		}
+		.phone{
+			line-height:50px;
 		}
 		#navicon{
 			float:right;
@@ -469,7 +464,7 @@ footer{
 					&:hover a{
 						color:#fff;
 					}
-	
+
 				}
 			}
 			li:hover{ 
@@ -497,9 +492,9 @@ footer{
 							a{
 								color:#E1953E;
 								font-size:1.3em;
-								
+
 								text-transform:none;
-							
+
 								&:hover{
 									color:#fff;
 								}
@@ -508,10 +503,10 @@ footer{
 					}
 				}
 			}
-			
+
 		}
 	}
-	
+
 
 	.actionbuttons{
 		position:relative;
@@ -526,7 +521,7 @@ footer{
 		height:1300px;
 		#left-footer{
 			text-align:left;
-			
+
 		}
 		.container{
 			#right-footer{
@@ -541,5 +536,3 @@ footer{
 		}
 	}
 }
-
-
