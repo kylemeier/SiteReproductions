@@ -196,6 +196,10 @@ font-family: arial,helvetica,sans-serif;
 
 .content{
 	padding-top:100px;
+	position:relative;
+	img{
+		width:100%;
+	}
 }	
 
 footer{
@@ -528,7 +532,7 @@ footer{
 		float:none;
 		width:100%;
 		ul{
-			width:220px;
+			width:230px;
 			margin:0 auto;
 		}
 		

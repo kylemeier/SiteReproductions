@@ -147,7 +147,10 @@ body {
     color: #EBEBEB; }
 
 .content {
-  padding-top: 100px; }
+  padding-top: 100px;
+  position: relative; }
+  .content img {
+    width: 100%; }
 
 footer {
   background: #4D5357;
@@ -393,7 +396,7 @@ footer {
     float: none;
     width: 100%; }
     .actionbuttons ul {
-      width: 220px;
+      width: 230px;
       margin: 0 auto; }
 
   footer {
