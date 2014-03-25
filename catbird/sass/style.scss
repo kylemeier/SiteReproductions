@@ -205,7 +205,7 @@ font-family: arial,helvetica,sans-serif;
 footer{
 	background:#4D5357;
 	border-top:5px solid #000;
-	margin:30px 0;
+	margin-top:30px;
 	height:400px;
 	font-size:.8em;
 	#left-footer{
@@ -528,7 +528,7 @@ footer{
 		display:inline;
 		top:11px;
 		right: 0;
-		z-index:998;
+		z-index:1000;
 		float:none;
 		width:100%;
 		ul{
@@ -536,10 +536,10 @@ footer{
 			margin:0 auto;
 		}
 		
-	}	
+	}
 	footer{
 		text-align:center;
-		height:1300px;
+		height:1250px;
 		#left-footer{
 			text-align:left;
 
