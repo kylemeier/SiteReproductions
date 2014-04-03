@@ -11,7 +11,7 @@
   clear: both; }
 
 body {
-  background-color: #ABABAB;
+  background-color: #110914;
   color: #222;
   font-family: arial,helvetica,sans-serif; }
 
@@ -330,14 +330,14 @@ footer {
     .mainnav #brand img {
       max-width: 100px; }
     .mainnav .phone {
-      line-height: 50px; }
+      vertical-align: center; }
     .mainnav #navbar-toggle {
       display: none; }
     .mainnav #navicon {
       float: right;
       display: inline;
       position: relative;
-      top: -60px;
+      top: -50px;
       padding: none; }
       .mainnav #navicon:after {
         font-family: 'icons';

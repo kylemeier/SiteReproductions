@@ -16,7 +16,8 @@
 }
 
 body {
-background-color:#ABABAB;
+// background-color:#ABABAB;
+background-color:#110914;
 color: #222;
 font-family: arial,helvetica,sans-serif;
 }
@@ -436,7 +437,7 @@ footer{
 			}
 		}
 		.phone{
-			line-height:50px;
+			vertical-align:center;
 		}
 		#navbar-toggle{
 			display:none;
@@ -445,7 +446,7 @@ footer{
 			float:right;
 			display:inline;
 			position:relative;
-			top:-60px;
+			top:-50px;
 			padding:none;
 			&:after{		
 				font-family:'icons';
