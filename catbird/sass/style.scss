@@ -382,7 +382,7 @@ footer{
 			#emailform{
 				.email-icon:after{
 					width:30px;
-					padding-bottom:8px;
+					padding-bottom:7px;
 				}
 
 				#emailaddress{
@@ -531,7 +531,7 @@ footer{
 		display:inline;
 		top:11px;
 		right: 0;
-		z-index:1000;
+		// z-index:2000;
 		float:none;
 		width:100%;
 		ul{
@@ -540,12 +540,18 @@ footer{
 		}
 		
 	}
+
 	footer{
 		text-align:center;
 		height:1250px;
 		#left-footer{
 			text-align:left;
+			#emailform{
+				.email-icon:after{
+					padding-bottom:8px;
 
+				}
+			}	
 		}
 		.container{
 			#right-footer{

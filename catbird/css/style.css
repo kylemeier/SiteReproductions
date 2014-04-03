@@ -291,7 +291,7 @@ footer {
         margin: 0 auto; }
       footer #left-footer #emailform .email-icon:after {
         width: 30px;
-        padding-bottom: 8px; }
+        padding-bottom: 7px; }
       footer #left-footer #emailform #emailaddress {
         border-radius: 0;
         padding: 5px;
@@ -393,7 +393,6 @@ footer {
     display: inline;
     top: 11px;
     right: 0;
-    z-index: 1000;
     float: none;
     width: 100%; }
     .actionbuttons ul {
@@ -405,6 +404,8 @@ footer {
     height: 1250px; }
     footer #left-footer {
       text-align: left; }
+      footer #left-footer #emailform .email-icon:after {
+        padding-bottom: 8px; }
     footer .container #right-footer ul {
       margin-right: 0%;
       float: none; }
