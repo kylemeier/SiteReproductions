@@ -344,6 +344,13 @@ footer{
 	}
 }
 
+#license{
+	color:#fff;
+	a{
+		color:#fff;
+	}
+}
+
 @media (max-width: 1590px){
 	#brand{
 		margin-right:100px;
@@ -426,7 +433,7 @@ footer{
 	color:#fff;
 	vertical-align:middle;
 	display:inline;	
-}
+	}
 
 	.mainnav{
 		height:auto;
@@ -543,13 +550,7 @@ footer{
 		text-align:center;
 		height:1250px;
 		#left-footer{
-			text-align:left;
-			#emailform{
-				.email-icon:after{
-					padding-bottom:8px;
-
-				}
-			}	
+			text-align:left;	
 		}
 		.container{
 			#right-footer{
@@ -561,6 +562,19 @@ footer{
 					float:none;
 				}
 			}
+		}
+	}
+}
+
+@media (max-height: 570px){
+	footer{
+		#left-footer{
+			#emailform{
+				.email-icon:after{
+					padding-bottom:8px;
+
+				}
+			}	
 		}
 	}
 }

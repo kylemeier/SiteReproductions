@@ -263,6 +263,11 @@ footer {
       footer #right-footer ul:last-child {
         margin-right: 0%; }
 
+#license {
+  color: #fff; }
+  #license a {
+    color: #fff; }
+
 @media (max-width: 1590px) {
   #brand {
     margin-right: 100px; }
@@ -403,10 +408,11 @@ footer {
     height: 1250px; }
     footer #left-footer {
       text-align: left; }
-      footer #left-footer #emailform .email-icon:after {
-        padding-bottom: 8px; }
     footer .container #right-footer ul {
       margin-right: 0%;
       float: none; }
       footer .container #right-footer ul h1 {
         margin-top: 20px; } }
+@media (max-height: 570px) {
+  footer #left-footer #emailform .email-icon:after {
+    padding-bottom: 8px; } }
