@@ -4,7 +4,6 @@
   src: url("../fonts/icons.eot?#iefixlq1ie") format("embedded-opentype"), url("../fonts/icons.woff?lq1ie") format("woff"), url("../fonts/icons.ttf?lq1ie") format("truetype"), url("../fonts/icons.svg?lq1ie#icons") format("svg");
   font-weight: normal;
   font-style: normal; }
-
 .group:after {
   content: "";
   display: table;
@@ -12,6 +11,7 @@
 
 body {
   background-color: #110914;
+  background: #fff;
   color: #222;
   font-family: arial,helvetica,sans-serif; }
 
@@ -43,13 +43,13 @@ body {
 .mainnav {
   z-index: 999;
   list-style: none;
-  background: #4D5357;
-  color: #fff;
+  background: #fff;
+  color: #676663;
   width: 100%;
   height: 68px;
   position: fixed;
   font-weight: bold;
-  border-bottom: 1px solid #000; }
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); }
   .mainnav #navicon {
     display: none; }
   .mainnav li {
@@ -58,7 +58,7 @@ body {
     position: relative;
     margin-right: 10px; }
   .mainnav a {
-    color: #E1953E;
+    color: #676663;
     padding: 10px; }
     .mainnav a:hover {
       color: #fff; }
@@ -89,7 +89,7 @@ body {
       .mainnav ul ul a {
         white-space: nowrap; }
     .mainnav ul li:hover a {
-      color: #fff; }
+      color: #08c; }
     .mainnav ul li:hover ul {
       left: 0; }
       .mainnav ul li:hover ul a {
@@ -120,30 +120,25 @@ body {
   .actionbuttons ul li {
     float: left; }
 
-.warmbutton {
-  background: linear-gradient(#fbb450, #f89406);
+.warm-button {
+  background: #7C0E26;
   border-radius: 0 0 0 5px;
   padding: 10px;
   font-weight: normal;
-  color: #fff;
-  text-shadow: -1px -1px #824E03;
-  border: 1px solid #f89406;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); }
-  .warmbutton:hover {
-    background: #f89406;
+  color: #fff; }
+  .warm-button:hover {
+    background: #C8173D;
     color: #EBEBEB; }
 
-.coolbutton {
+.cool-button {
   border: 1px solid #2f96b4;
-  background: linear-gradient(#49afcd, #2f96b4);
+  background: #3396CF;
   border-radius: 0 0 5px 0;
   padding: 10px;
   font-weight: normal;
-  color: #fff;
-  text-shadow: -1px -1px #113540;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); }
-  .coolbutton:hover {
-    background: #2f96b4;
+  color: #fff; }
+  .cool-button:hover {
+    background: #7ED3FF;
     color: #EBEBEB; }
 
 .content {
@@ -153,27 +148,25 @@ body {
     width: 100%; }
 
 footer {
-  background: #4D5357;
+  background: #686663;
   border-top: 5px solid #000;
   margin-top: 30px;
   height: 400px;
   font-size: .8em; }
   footer #left-footer {
     width: 25%;
-    color: #72BFE7;
+    color: #fff;
     float: left; }
     footer #left-footer h1 {
       display: inline-block; }
     footer #left-footer #social {
       margin: 20px 0; }
       footer #left-footer #social h1 {
-        width: 100%;
-        border-bottom: 1px solid #fff; }
+        width: 100%; }
       footer #left-footer #social li {
-        background: #72BFE7;
+        background: #3997CD;
         float: left;
         border-radius: 30px;
-        border: 1px solid #fff;
         margin: 20px 0 20px 5%; }
         footer #left-footer #social li:first-child {
           margin-left: 0; }
@@ -216,13 +209,13 @@ footer {
           background: #7ED3FF; }
     footer #left-footer #emailform {
       padding-top: 10px;
-      border-top: 1px solid #fff; }
+      color: #686663; }
       footer #left-footer #emailform .email-icon:after {
         font-family: 'icons';
         content: "\e606";
         color: #fff;
         vertical-align: middle;
-        background: #72BFE7;
+        background: #3997CD;
         padding: 7px;
         border-radius: 5px 0 0 5px;
         float: left;
@@ -247,7 +240,7 @@ footer {
     width: 70%;
     height: 360px;
     display: inline-block;
-    border-left: 1px solid #666;
+    border-left: 1px solid #777;
     padding-left: 2%;
     margin: 20px 0 0 2%;
     line-height: 30px; }
@@ -256,10 +249,12 @@ footer {
       margin-right: 10%;
       color: #fff; }
       footer #right-footer ul a {
-        color: #fff; }
+        color: #ccc; }
+        footer #right-footer ul a:hover {
+          color: #fff; }
       footer #right-footer ul h1 {
         margin-bottom: 10px;
-        color: #E1953E; }
+        color: #fff; }
       footer #right-footer ul:last-child {
         margin-right: 0%; }
 
