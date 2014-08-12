@@ -1,3 +1,5 @@
+$navHeight: 68px;
+
 @font-face {
 	font-family: 'icons';
 	src:url('../fonts/icons.eot?lq1ie');
@@ -19,7 +21,7 @@ body {
 // background-color:#ABABAB;
 background-color:#110914;
 background:#fff;
-color: #222;
+color: #676663;
 font-family: arial,helvetica,sans-serif;
 }
 
@@ -50,8 +52,20 @@ font-family: arial,helvetica,sans-serif;
 
 .container{
 	position:relative;
-	margin:0 15%;
+	padding:0 15%;
 }
+
+#brand{
+	text-transform:uppercase;
+	margin-right:200px;
+	margin-left:-10px;
+	position:absolute;
+	line-height:$navHeight;
+	&:hover{
+		color:#676663;
+	}
+}
+
 .mainnav{
 	z-index:999;
 	list-style:none;
@@ -66,28 +80,26 @@ font-family: arial,helvetica,sans-serif;
 		display:none;
 	}
 	li{
-		float:left;
+		display:inline-block;
 		text-transform: uppercase;
 		position:relative;
 		margin-right:10px;
+		&:last-child{
+			margin-right:0;
+			a{
+				padding-right:0;
+			}
+		}
 
 	}
 	a{
 		color:#676663;
 		padding:10px;
-		&:hover{
-			color:#fff;			
-		}
-	}
-	h1{
-		margin-right:200px;
-		margin-left:-10px;
-		a{
-			color:#fff;
-		}
 	}
 	ul{
+		float:right;
 		line-height:68px;
+		margin:0 auto;
 		ul{
 		line-height:40px;
 		background:#fff;
@@ -99,7 +111,6 @@ font-family: arial,helvetica,sans-serif;
 			li{
 				a{
 					text-transform:none;
-					color:#000;
 					text-align:center;
 					font-weight:normal;
 					font-size:.9em;
@@ -122,7 +133,7 @@ font-family: arial,helvetica,sans-serif;
 			ul{
 				left:0;
 				a{
-					color:#000;
+					color:#676663;
 					&:hover{
 						color:#08c;
 					}
@@ -138,7 +149,7 @@ font-family: arial,helvetica,sans-serif;
 					li{
 						float:none;
 						a{
-							color:#000;
+							color:#676663;
 							&:hover{
 								color:#08c;
 							}
@@ -151,42 +162,56 @@ font-family: arial,helvetica,sans-serif;
 	}
 }
 
+// #contact-info{
+// 	position:absolute;
+// 	right:-5px;
+// 	float:right;
+// 	font-size:.8em;
+// 	li{
+// 		display:inline-block;
+// 	}
+// }
+
 .actionbuttons{
 	position:fixed;
+	height:auto;
 	display:inline;
-	top:78px;
-	right:15%;
-	font-size:1em;
+	top:$navHeight;
 	z-index:998;
-	float:right;
+	right:15%;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 	ul{
 		li{
 			float:left;
 		}
 	}
+	a{
+		position:relative;
+		display:block;
+	}
 }
 
 .warm-button{
 	background: #7C0E26;
-	border-radius:0 0 0 5px;
+	// border-radius:0 0 0 5px;
 	padding:10px;
 	font-weight:normal;
 	color:#fff;
 	&:hover{
 	background:#C8173D;
 	color:#EBEBEB;
+
 	}
 }
 .cool-button{
-	border:1px solid #2f96b4;
+	// border:1px solid #2f96b4;
 	// background: linear-gradient(#49afcd,#2f96b4);
 	background:#3396CF;
-	border-radius:0 0 5px 0;
+	// border-radius:0 0 5px 0;
 	padding:10px;
 	font-weight:normal;
 	color:#fff;
 	// text-shadow: -1px -1px #113540;
-	// box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
 	&:hover{
 	background: #7ED3FF;
 	color:#EBEBEB;
@@ -196,6 +221,7 @@ font-family: arial,helvetica,sans-serif;
 .content{
 	padding-top:100px;
 	position:relative;
+	// z-index:-1;
 	img{
 		width:100%;
 	}
@@ -203,7 +229,7 @@ font-family: arial,helvetica,sans-serif;
 
 footer{
 	background:#686663;
-	border-top:5px solid #000;
+	border-top:39px solid #3396CF;
 	margin-top:30px;
 	height:400px;
 	font-size:.8em;
@@ -304,11 +330,11 @@ footer{
 			}
 		}
 		.submit{
-			font-size:.9em;
+			border:none;
 			float:right;
 			border-radius:5px;
 			box-shadow:none;
-			padding:5px 10px;
+			padding:6px 10px;
 		}
 	}
 	#right-footer{
@@ -343,41 +369,191 @@ footer{
 	}
 }
 
-#license{
-	color:#fff;
-	a{
-		color:#fff;
-	}
+#copyright{
+	position:relative;
+	height:50px;
+	text-align:center;
+	line-height:50px;
 }
 
-@media (max-width: 1590px){
+@media (max-width: 1470px){
 	#brand{
 		margin-right:100px;
 	}
 	.container{
-		margin:0 10%;
+		padding:0 5%;
+	}
+	.actionbuttons{
+		right:5%;
 	}
 }
 
-@media (max-width: 1280px){
+@media (max-width: 1140px){
 	.mainnav{
-		font-size:.8em;
+		font-size:.9em;
 	}
-		#brand{
-		margin-right:0;
-	}
-	.container{
-		margin:0 10%;
 
-	}
 	footer{
-		height:550px;
-		#left-footer{
+		#right-footer{
+			ul{
+				margin-right:5%;
+			}			
+		}
+	
+	}
+}
+
+@media (max-width: 1000px){
+
+	.container{
+		padding:0 3%;
+	}
+
+	.secondlayer-arrow:after{
+		font-family:'icons';
+		content:"\e605";
+		vertical-align:middle;
+		display:inline;	
+	}
+
+	.mainnav{
+		height:auto;
+		position:relative;
+		#contact-info{
+			display:block;
+			font-size:.8em;
+			li{
+				display:inline-block;
+				margin-right:0;
+				&:not(:last-child){
+					&:after{
+						content:'|';
+					}
+				}
+			}
+		}
+		#brand{
+			position:relative;
+		}
+		.phone{
+			vertical-align:center;
+		}
+		#navbar-toggle{
+			display:none;
+			position:relative;
+		}
+		#navicon{
+			position:absolute;
+			right:0;
+			display:inline;
+			top:0px;
+			padding:none;
+			line-height:50px;
+			&:after{		
+				font-family:'icons';
+				font-size:2em;
+				content:"\e603";
+				padding:none;
+
+			}
+		}
+		li{
+			display:block;
+			position:relative;
+
+		}
+		ul{
+			float:none;
+			line-height:40px;
+			ul{
+			line-height:40px;
+	    	position:absolute;
+			border:none;
+			box-shadow:none;
+				li{
+					a{
+						text-transform:none;
+						// color:#fff;
+						text-align:center;
+						font-weight:normal;
+						font-size:1.1em;
+					}
+
+					&:hover a{
+						// color:#fff;
+					}
+
+				}
+			}
+			li:hover{ 
+				a{
+					// color:#fff;
+				}
+				ul{
+					position:relative;
+					left:0;
+					a{
+						// color:#E1953E;
+						&:hover{
+							// color:#fff;
+						}
+					}
+					ul{
+						display:none;
+					}
+					li:hover ul{
+						display:block;
+						left:30px;
+						li{
+							float:none;
+							a{
+								// color:#E1953E;
+								font-size:1.3em;
+
+								text-transform:none;
+
+								&:hover{
+									// color:#fff;
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	.actionbuttons{
+		position:relative;
+		left:3%;
+		top:0;
+		ul{
+			position:relative;
+			width:196px;
+			height:38px;
+			display:block;
+			margin:0 auto;
+			box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+		}
+		
+	}
+
+	.content{
+		padding-top:3%;
+		background:#fff;
+	}
+
+	footer{
+		text-align:center;
+		height:250px;
+
+	#left-footer{
 			width:100%;
+			text-align:center;
 			#social{
 				h1{
-					width:100%;
-					border-bottom: 1px solid #fff;
+					text-align:center;
 				}
 				ul{
 					width:220px;
@@ -386,9 +562,14 @@ footer{
 				}
 			}
 			#emailform{
+				margin:0 auto;
 				.email-icon:after{
 					width:30px;
 					padding-bottom:7px;
+					float:none;
+					position:relative;
+					top:-1px;
+					left:4px;
 				}
 
 				#emailaddress{
@@ -410,157 +591,7 @@ footer{
 			}
 		}
 		#right-footer{
-			width:100%;
-			border-left:none;
-			border-top: 1px solid #666;
-			padding-left:0%;
-			margin:0px;
-			margin-top:30px;
-			height:auto;			
-		}
-	}
-}
-
-@media (max-width: 1000px){
-	.container{
-		margin:0 3%;
-	}
-
-	.secondlayer-arrow:after{
-	font-family:'icons';
-	content:"\e605";
-	color:#fff;
-	vertical-align:middle;
-	display:inline;	
-	}
-
-	.mainnav{
-		height:auto;
-		position:relative;
-		#brand{
-			img{
-				max-width:100px;
-			}
-		}
-		.phone{
-			vertical-align:center;
-		}
-		#navbar-toggle{
 			display:none;
-		}
-		#navicon{
-			float:right;
-			display:inline;
-			position:relative;
-			top:-50px;
-			padding:none;
-			&:after{		
-				font-family:'icons';
-				font-size:2em;
-				content:"\e603";
-				color:#fff;
-				padding:none;
-
-			}
-		}
-		li{
-			float:none;
-			position:relative;
-
-		}
-		ul{
-			line-height:40px;
-			ul{
-			line-height:40px;
-			background:#fff;
-			background:rgba(255,255,255,0);
-	    	position:absolute;
-			border:none;
-			box-shadow:none;
-				li{
-					a{
-						text-transform:none;
-						color:#fff;
-						text-align:center;
-						font-weight:normal;
-						font-size:1.1em;
-					}
-
-					&:hover a{
-						color:#fff;
-					}
-
-				}
-			}
-			li:hover{ 
-				a{
-					color:#fff;
-				}
-				ul{
-					position:relative;
-					left:0;
-					a{
-						color:#E1953E;
-						&:hover{
-							color:#fff;
-						}
-					}
-					ul{
-						display:none;
-					}
-					li:hover ul{
-						display:block;
-						left:30px;
-						li{
-							float:none;
-							a{
-								color:#E1953E;
-								font-size:1.3em;
-
-								text-transform:none;
-
-								&:hover{
-									color:#fff;
-								}
-							}
-						}
-					}
-				}
-			}
-
-		}
-	}
-
-
-	.actionbuttons{
-		position:absolute;
-		top:11px;
-		right: 0;
-		float:none;
-		width:100%;
-		ul{
-			width:230px;
-			margin:0 auto;
-		}
-		
-	}
-
-	footer{
-		text-align:center;
-		height:1250px;
-		#left-footer{
-			text-align:left;	
-		}
-		.container{
-			#right-footer{
-				ul{
-					margin-right:0%;
-					h1{
-						margin-top:20px;
-					}
-					float:none;
-				}
-			}
 		}
 	}
 }
@@ -570,7 +601,7 @@ footer{
 		#left-footer{
 			#emailform{
 				.email-icon:after{
-					padding-bottom:8px;
+					padding-top:8px;
 
 				}
 			}	
