@@ -18,11 +18,9 @@ $navHeight: 68px;
 }
 
 body {
-// background-color:#ABABAB;
-background-color:#110914;
-background:#fff;
-color: #676663;
-font-family: arial,helvetica,sans-serif;
+	background:#fff;
+	color: #676663;
+	font-family: 'Open Sans', Arial, sans-serif; 
 }
 
 .down-arrow:after{
@@ -61,13 +59,15 @@ font-family: arial,helvetica,sans-serif;
 	margin-left:-10px;
 	position:absolute;
 	line-height:$navHeight;
-	&:hover{
-		color:#676663;
+	a{
+		color:#7C0E26;
 	}
 }
 
+
 .mainnav{
 	z-index:999;
+	font-size:.9em;
 	list-style:none;
 	background:#fff;
 	color:#676663;
@@ -84,13 +84,6 @@ font-family: arial,helvetica,sans-serif;
 		text-transform: uppercase;
 		position:relative;
 		margin-right:10px;
-		&:last-child{
-			margin-right:0;
-			a{
-				padding-right:0;
-			}
-		}
-
 	}
 	a{
 		color:#676663;
@@ -162,15 +155,14 @@ font-family: arial,helvetica,sans-serif;
 	}
 }
 
-// #contact-info{
-// 	position:absolute;
-// 	right:-5px;
-// 	float:right;
-// 	font-size:.8em;
-// 	li{
-// 		display:inline-block;
-// 	}
-// }
+#contact-info{
+	li:last-child{
+		margin-right:0;
+		a{
+			padding-right:0;
+		}
+	}
+}
 
 .actionbuttons{
 	position:fixed;
@@ -238,7 +230,8 @@ footer{
 	 	color:#fff;
 	 	float:left;
 	 	h1{
-			display:inline-block;	
+			display:inline-block;
+			font-weight:normal;
 		}
 		#social{
 			margin:20px 0;
@@ -306,16 +299,18 @@ footer{
 		#emailform{
 			padding-top:10px;
 			color:#686663;
-
+			.email-icon{
+				min-height:30px;
+			}
 			.email-icon:after{
 				font-family:'icons';
+				font-size:.9em;
 				content:"\e606";
 				color:#fff;
-				vertical-align:middle;
 				background:#3997CD;
-				padding:7px;
-				border-radius: 5px 0 0 5px;
+				padding:9px;
 				float:left;
+				border-radius: 5px 0 0 5px;
 				box-sizing:border-box;
 				width:10%;
 				text-align:center;
@@ -323,9 +318,9 @@ footer{
 
 			#emailaddress{
 				border-radius: 0 5px 5px 0;
-				padding:5px;
 				border:1px solid #D4D4D4;
 				width:90%;
+				height:30px;
 				box-sizing:border-box;
 			}
 		}
@@ -530,7 +525,7 @@ footer{
 		top:0;
 		ul{
 			position:relative;
-			width:196px;
+			width:206px;
 			height:38px;
 			display:block;
 			margin:0 auto;
@@ -564,11 +559,9 @@ footer{
 			#emailform{
 				margin:0 auto;
 				.email-icon:after{
-					width:30px;
-					padding-bottom:7px;
 					float:none;
 					position:relative;
-					top:-1px;
+					// top:-1px;
 					left:4px;
 				}
 
@@ -597,11 +590,16 @@ footer{
 }
 
 @media (max-height: 570px){
+	.actionbuttons{
+		ul{
+			width:205px;
+		}
+	}
 	footer{
 		#left-footer{
 			#emailform{
 				.email-icon:after{
-					padding-top:8px;
+					padding-top:9px;
 
 				}
 			}	
