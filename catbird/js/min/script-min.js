@@ -1,0 +1,1 @@
+var menu=$("#navbar-toggle");$("#navicon").click(function(){menu.stop(!0,!1).slideToggle(300)});
